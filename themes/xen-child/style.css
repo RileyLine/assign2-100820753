@@ -11,3 +11,7 @@
 	Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready responsive-layout, accessibility-ready
 	Text Domain: xenchild
 */
+
+body {
+	background-color: hsl(60, 35%, 86%);
+}
