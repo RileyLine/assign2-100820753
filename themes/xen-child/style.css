@@ -13,5 +13,13 @@
 */
 
 body {
-	background-color: hsl(60, 35%, 86%);
+	background-color: #e8e8cf;
+}
+
+.wp-block-cover {
+	color: #eee;
+}
+
+ul.sub-menu .menu-item a {
+	background-color: #e8e8cf;
 }
