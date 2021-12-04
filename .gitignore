@@ -11,5 +11,7 @@ node_modules
 *.log
 *.sql
 
+plugins/*
+
 uploads
 upgrades
