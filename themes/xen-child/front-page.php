@@ -33,7 +33,7 @@ $posts_query = new WP_Query($query_args);
 ?> 
 	
 	<div class="recentPostsHolder">
-		<h2>Check out some of sponsors</h2>
+		<h2 style="text-align:center; margin: 10px 0;">Check out some of sponsors</h2>
 		<div class="sponsorsHolder">
 			<?php
 			if ( $posts_query-> have_posts() ) {
