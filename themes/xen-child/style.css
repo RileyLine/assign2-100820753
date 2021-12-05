@@ -12,14 +12,60 @@
 	Text Domain: xenchild
 */
 
+a {
+	text-decoration-thickness: 1px !important;
+}
+
+
+
 body {
 	background-color: #dadac1;
+}
+
+a:hover {
+	text-decoration: underline !important;
+	text-decoration-thickness: 1px !important;
+}
+
+a:active {
+	background-color: white !important;
+	color: #28303D !important;
+}
+
+a:focus {
+	background-color: white !important;
+	color: #28303D !important;
 }
 
 .wp-block-cover {
 	color: #eee;
 }
 
+.svg-icon path {
+	fill: white;
+}
+
 ul.sub-menu .menu-item a {
-	background-color: #e8e8cf;
+	background-color: #28303D;
+}
+
+ul.sub-menu {
+	border-top: 1px solid #f29c33 !important;
+	padding-top: 0px !important;
+}
+
+.primary-navigation > div > .menu-wrapper > li > .sub-menu:before, .primary-navigation > div > .menu-wrapper > li > .sub-menu:after, .primary-navigation > div > .menu-wrapper > li > .sub-menu:before, .primary-navigation > div > .menu-wrapper > li > .sub-menu:before {
+	display: none;
+}
+
+ul#primary-menu-list {
+	padding: 0 10px;
+}
+
+ul#primary-menu-list li.menu-item a {
+	color: white;
+}
+
+.primary-navigation {
+	background-color: #28303D;
 }
