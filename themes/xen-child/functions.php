@@ -24,6 +24,10 @@ function xenchild_wp_enqueue_styles() {
         array( $parenthandle ),
         $theme->get('Version')
     );
+    wp_enqueue_style(
+	    'custom-template-style', 
+	    get_stylesheet_directory_uri() . '/custom-template-style.css'
+    );
 }
 
 add_action( 'wp_enqueue_scripts', 'xenchild_wp_enqueue_styles' );
