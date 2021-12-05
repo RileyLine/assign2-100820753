@@ -43,7 +43,7 @@ $posts_query = new WP_Query($query_args);
 					<div class="sponsor">
 						<div class="sponsorImage"><?php the_post_thumbnail(); ?></div>
 						<h3 class="sponsorName"> <?php the_title(); ?></h3>
-						<p class="sponsorLink"> <?php the_content(); ?></p>
+						<?php the_content(); ?>
 					</div>
 					<?php
 				}
