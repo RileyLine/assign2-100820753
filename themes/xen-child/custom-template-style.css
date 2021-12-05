@@ -99,6 +99,61 @@ main {
 	max-width: 100% !important;
 }
 
+/* Custom Form Style */
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], .site textarea {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 3px;
+}
+
+
+input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=search]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=date]:focus, input[type=month]:focus, input[type=week]:focus, input[type=time]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=color]:focus, .site textarea:focus {
+	outline: none;
+}
+
+.contactForm {
+	margin-left: 60px;
+}
+
+.contactBlurb {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px;
+	scroll-margin-top: 20px;
+}
+
+.contactBlurb img {
+	width: 50%;
+	max-width: 450px;
+	min-width: 300px;
+	align-self: center;
+	margin-top: 50px;
+}
+
+div.sharedaddy {
+	display: none;
+}
+
+#post-16 {
+	margin-bottom: 0px;
+}
+
+#submitBtn {
+	width: 100%;
+	color: white;
+	border: none;
+}
+
+#submitBtn:hover {
+	background-color: #374253;
+	border: none;
+}
+
+#submitBtn:active, #submitBtn:focus {
+	border: none;
+	outline: none;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 	main {
