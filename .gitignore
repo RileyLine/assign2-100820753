@@ -15,3 +15,5 @@ plugins/*
 
 uploads
 upgrades
+
+themes/xen-child/assets/*
