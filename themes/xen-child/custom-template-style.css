@@ -12,6 +12,11 @@
 	Text Domain: xenchild
 */
 
+.site .button:focus, button:focus, input[type=submit]:focus, input[type=reset]:focus, .wp-block-search .wp-block-search__button:focus, .wp-block-button .wp-block-button__link:focus, .wp-block-file a.wp-block-file__button:focus {
+	outline: none;
+	border: none;
+}
+
 main {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -33,6 +38,7 @@ main {
 .queryResult {
 	margin: 20px 0 10px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+	padding-bottom: 10px;
 }
 
 .titleText {
@@ -77,6 +83,16 @@ main {
 
 .recentPostsHolder {
 	grid-column: 1 / 3;
+	margin-top: 30px;
+}
+
+.postsHolder {
+	/* display: flex; */
+	gap: 20px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 }
 
 .sponsorsHolder {
@@ -86,7 +102,7 @@ main {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
 
-	max-width: 1240px;
+	max-width: 1024px;
 	background-color: #EEEADD;
 }
 
@@ -127,7 +143,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[ty
 	max-width: 450px;
 	min-width: 300px;
 	align-self: center;
-	margin-top: 50px;
+	margin: 50px 0;
 }
 
 div.sharedaddy {
@@ -161,19 +177,93 @@ div.sharedaddy {
 		padding: 0 50px;
 	}
 
+	.postsHolder {
+		/* display: flex; */
+		gap: 20px;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 900px) {
+
+	.sponsorsHolder {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+
+		max-width: 1024px;
+		background-color: #EEEADD;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.postsHolder {
+		/* display: flex; */
+		gap: 20px;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.postsHolder {
+		/* display: flex; */
+		gap: 20px;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.customSidebar {
+		grid-column: 1 / 3;
+		width: auto;
+		margin-left: 0px;
+	}
+
 	.page {
 		grid-column: 1 / 3;
 	}
 
-	.customSidebar {
-		width: 100%;
-		margin: 0px;
-		padding: 0 40px;
+	.contactBlurb, .contactForm {
 		grid-column: 1 / 3;
+		margin: 0px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	.primary-navigation > .primary-menu-container {
+		background-color: #28303D;
 	}
 
-	.postsHolder {
-		display: flex;
-		gap: 20px;
+	.primary-navigation-open .menu-button-container {
+		background-color: #1e242e;
+	}
+
+	.dropdown-icon.close {
+		color: white;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	main {
+		padding: 0 40px;
+	}
+
+	.sponsorsHolder {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+
+		max-width: 1024px;
+		background-color: #EEEADD;
 	}
 }
