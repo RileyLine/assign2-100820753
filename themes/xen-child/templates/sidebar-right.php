@@ -55,7 +55,7 @@ $posts_query = new WP_Query($query_args);
 					<div class="queryResult">
 
 						<div class="postImage"><?php the_post_thumbnail(); ?></div>
-						<h3 class="titleText"><?php the_title(); ?></h3>
+						<h3 class="titleText"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h3>
 						<div class="excerptArea"><?php the_excerpt() ?></div>
 
 					</div>
