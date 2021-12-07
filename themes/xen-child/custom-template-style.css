@@ -122,7 +122,6 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
 	padding: 3px;
 }
 
-
 input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=search]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=date]:focus, input[type=month]:focus, input[type=week]:focus, input[type=time]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=color]:focus, .site textarea:focus {
 	outline: none;
 }
@@ -170,6 +169,9 @@ div.sharedaddy {
 	outline: none;
 }
 
+
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 	main {
